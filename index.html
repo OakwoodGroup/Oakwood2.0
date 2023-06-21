@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OAD Development</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://kit.fontawesome.com/f48c05ea2e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css?v=1.3">
+
+</head>
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">OAD.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#accounting"><strong>Accounting & Tax</strong></a></li>
+              <li style="margin-top:10px; font-size:0.8rem;padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);"><strong>Corporate Secretary</strong></li>
+              <li><a class="dropdown-item" href="#incorp">Incorporation</a></li>
+              <li><a class="dropdown-item" href="#transit">Transit</a></li>
+              <!--<li><hr class="dropdown-divider"></li>-->
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#grant"><strong>Grant Application</strong></a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Perks & Benefits
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Virtual Credit Card</a></li>
+              <li><a class="dropdown-item" href="#">Corporate Credit Card</a></li>
+              <li><a class="dropdown-item" href="#">OAD Card</a></li>
+              <li><a class="dropdown-item" href="#">ESG</a></li>
+              <li><a class="dropdown-item" href="#">Business Loans</a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu">
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#vision"><strong>Vision</strong></a></li>
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#mission"><strong>Mission</strong></a></li>
+              <!-- <li style="margin-top:10px; font-size:0.8rem;padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);"><strong>Partners</strong></li>
+              <li><a class="dropdown-item" href="#">HRMS</a></li>
+              <li><a class="dropdown-item" href="#">Digital Account</a></li>
+              <li><a class="dropdown-item" href="#">Cloud Accounting</a></li>
+              <li><a class="dropdown-item" href="#">Co-Working</a></li> -->
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#team"><strong>Our Team</strong></a></li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sustainability
+            </a>
+            <ul class="dropdown-menu">
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#csr"><strong>Our CSR</strong></a></li>
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#partners"><strong>Community Partners</strong></a></li>
+              <li style="margin-top:10px;"><a class="dropdown-item" href="#accords"><strong>ACCORDS Programme</strong></a></li>
+            </ul>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item" style="border-left:0.5px solid lightgray; padding-left:10px;">
+            <a class="nav-link" href="#"><i class="fa-solid fa-right-to-bracket" style="margin-right:10px;"></i>Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="docSlider">
+
+    <section id="home">
+      <div class="inner">
+        <!-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/web-bg-1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Starting a new business and unsure of regulatory requirements?</h5>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/web-bg-2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Afraid of hefty penalties for non-compliance?</h5>
+                
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/web-bg-3.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Let us help you avoid potential pitfalls because<br>your business deserves a peace of mind.</h5>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> -->
+      </div>
+    </section>
+  	<!-- 0: About Page -->
+    <section id="about">
+      
+      <div class="inner">
+        <div class="card card-oad">
+          <a href="#contact" class="contact-circle-red"></a>
+          <div id="about-top-text">
+          </div>
+          <div id="about-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">   
+              <div class="row">
+                <div class="home_left col-xl-6 col-sm-12">
+                  <p class="cardtext-subheader">Don't let regulatory oversights</p>
+                  <p class="cardtext-header" style="margin-top:-15px;">DRAIN PROFITS</p> 
+                    <div class="row">
+                      <div class="col-xl-6 col-sm-12 mx-auto">
+<!--                         <center>
+                          <p class="pinfo">Starting a new business? Unsure of your regulatory requirements? Afraid of hefty penalties for non-compliance? Stay informed and avoid these pitfalls because your business deserves a peace of mind! Focus on growth while we handle everything else.</p>
+                        </center> -->
+                      </div>
+                    </div>
+<!--                     <div class="row" style="margin-top:35px;">
+                      <button type="button" class="about_btn">Start Here</button>
+                    </div>  -->
+                </div>
+                <div class="about_us col-xl-6 col-sm-12">
+                  <div class="about_us_wrap" style="margin-top:-30px;">
+                    <h1 class="about_us_wrap_title">Start Your Corporate Journey<br>Here With Us</h1>
+                    <div class="about_us_wrap_text">
+                        
+                        <p>At OAD, we prioritize corporate governance and legal compliance for business success. With a deep understanding of the legal landscape, we ensure regulatory adherence to avoid costly penalties and setbacks, empowering entrepreneurs to focus on growth and realizing their dreams.</p>
+
+                        <!-- <h3>Subheader 1</h3> -->
+                      
+                        <h4>Stay up to date with latest regulations</h4>
+                        <p>Our corporate secretary services provide peace of mind by ensuring legal compliance for your business. We handle the complexities of regulations, allowing you to focus on business growth and success without the burden of administrative obligations.</p>
+                       
+                        <h4>Corporate Governance</h4>
+                        <p>With our expertise in corporate governance, we act as your trusted partner, providing comprehensive support and guidance tailored to your specific industry. From maintaining accurate and up-to-date corporate records to filing statutory documents and meeting deadlines, we handle the administrative burden, so you don't have to. Our team of experienced professionals is well-versed in local and international regulations, ensuring that your business adheres to the highest standards of compliance.</p>
+                        
+                        <h4>Going Beyond Compliance</h4>
+                        <p>As your trusted partner, we offer industry-specific support in corporate governance. From maintaining records to meeting deadlines, we handle administrative burdens. With our expertise in local and international regulations, your business maintains the highest compliance standards. Focus on growth while we handle the rest.</p>
+                       
+                        <h4>Your Partner in Success</h4>
+                        <p>At OAD, our dedicated corporate secretary services cater to your specific needs, ensuring reliable and efficient support. Entrust us with regulatory and compliance requirements, while you focus on building a thriving enterprise. Contact us today for expert management of your corporate governance needs and experience peace of mind in your business journey.</p>
+                        
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section id="services-1">
+      
+      <div class="inner">
+        <div class="card card-oad">
+          <a href="#contact" class="contact-circle-red"></a>
+          <div id="about-top-text">
+          </div>
+          <div id="about-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">   
+              <div class="row">
+                <div class="services1_left col-xl-6 col-sm-12">
+
+                    <div class="row">
+                      <div class="col-xl-6 col-sm-12 mx-auto">
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="about_us col-xl-6 col-sm-12">
+                  <div class="about_us_wrap" style="margin-top:-30px;">
+                    <h1 class="about_us_wrap_title">Accounting</h1>
+                    <div class="about_us_wrap_text">
+                        
+                        <p>At OAD, we offer a comprehensive range of accounting services to help you streamline your financial processes and ensure compliance. Our experienced team of professionals is dedicated to providing accurate and reliable solutions tailored to your business needs.</p>
+
+                        <!-- <h3>Subheader 1</h3> -->
+                      
+                        <h4>Preparation of Management Accounts</h4>
+                        <p> Stay informed about your business's financial performance with our management accounting services. We analyze and present your financial data in a clear and concise manner, enabling you to make informed decisions.</p>
+                       
+                        <h4>Digital Asset Accounting</h4>
+                        <p>Embrace the digital revolution with our digital asset accounting services. We help you effectively manage and account for digital assets, ensuring accurate record-keeping and compliance with accounting standards</p>
+                        
+                        <h4>ACRA XBRL Filing</h4>
+                        <p>Simplify your regulatory reporting obligations with our ACRA XBRL filing services. We assist you in preparing and filing financial statements in XBRL format, ensuring compliance with the Accounting and Corporate Regulatory Authority (ACRA).</p>
+                       
+                        <h4>Compilation & Consolidation of Unaudited Financial Statement</h4>
+                        <p>Our experts compile and consolidate unaudited financial statements, providing a comprehensive overview of your company's financial position. Trust us to deliver accurate and reliable financial statements.</p>
+
+                        <h4>Cloud Accounting System Set-up</h4>
+                        <p>Leverage the power of cloud technology for efficient financial management. We assist in setting up cloud accounting systems, enabling secure and convenient access to your financial data anytime, anywhere.</p>
+                        
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section id="services-2">
+      
+      <div class="inner">
+        <div class="card card-oad">
+          <a href="#contact" class="contact-circle-red"></a>
+          <div id="about-top-text">
+          </div>
+          <div id="about-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">   
+              <div class="row">
+                <div class="services2_left col-xl-6 col-sm-12">
+
+                    <div class="row">
+                      <div class="col-xl-6 col-sm-12 mx-auto">
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="about_us col-xl-6 col-sm-12">
+                  <div class="about_us_wrap" style="margin-top:-30px;">
+                    <h1 class="about_us_wrap_title">Tax</h1>
+                    <div class="about_us_wrap_text">
+                        
+                        <p>Navigating the complex landscape of tax regulations can be challenging. At OAD, we offer comprehensive tax services to ensure compliance and optimize your tax position.</p>
+
+                        <!-- <h3>Subheader 1</h3> -->
+                      
+                        <h4>Tax Compliance & Advisory</h4>
+                        <p>Our tax compliance and advisory services help you meet your tax obligations while maximizing tax efficiency. We provide expert guidance and personalized strategies to minimize tax risks and enhance your financial position.</p>
+                       
+                        <h4>Preparation and Submit Annual ECI</h4>
+                        <p>Simplify your tax reporting process with our assistance in preparing and submitting your annual estimated chargeable income (ECI) to the tax authorities.</p>
+                        
+                        <h4>Annual Tax Computation & Form C/C-S</h4>
+                        <p>Our professionals handle the complex task of annual tax computation and prepare the necessary forms (Form C/C-S) accurately and promptly, ensuring compliance with tax regulations.</p>
+
+                        
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section id="services-3">
+      
+      <div class="inner">
+        <div class="card card-oad">
+          <a href="#contact" class="contact-circle-red"></a>
+          <div id="about-top-text">
+          </div>
+          <div id="about-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">   
+              <div class="row">
+                <div class="services3_left col-xl-6 col-sm-12">
+
+                    <div class="row">
+                      <div class="col-xl-6 col-sm-12 mx-auto">
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="about_us col-xl-6 col-sm-12">
+                  <div class="about_us_wrap" style="margin-top:-30px;">
+                    <h1 class="about_us_wrap_title">Corporate Services</h1>
+                    <div class="about_us_wrap_text">
+                        
+                        <p>OAD offers a comprehensive suite of corporate services to support your business growth and ensure smooth operations.</p>
+
+                        <!-- <h3>Subheader 1</h3> -->
+                      
+                        <h4>Family Office Set-Up</h4>
+                        <p>Establish and manage your family office with our comprehensive services. We provide personalized solutions to meet the unique requirements of high-net-worth individuals and families.</p>
+                       
+                        <h4>Facilitate Grant Applications</h4>
+                        <p>Unlock funding opportunities for your business with our grant application services. We assist you in identifying suitable grants and facilitate the application process, increasing your chances of securing funding.</p>
+                        
+                        <h4>Employment Pass/Visa Application</h4>
+                        <p>Streamline the process of obtaining employment passes or visas for your foreign employees. Our team guides you through the application process, ensuring compliance with immigration regulations.</p>
+                       
+                        <h4>Business Process Outsourcing</h4>
+                        <p>Optimize your operations by outsourcing non-core business functions to our experts. We provide reliable and cost-effective solutions, allowing you to focus on your core competencies.</p>
+                        
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+    <section id="services-4">
+      
+      <div class="inner">
+        <div class="card card-oad">
+          <a href="#contact" class="contact-circle-red"></a>
+          <div id="about-top-text">
+          </div>
+          <div id="about-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="container-fluid">   
+              <div class="row">
+                <div class="services4_left col-xl-6 col-sm-12">
+
+                    <div class="row">
+                      <div class="col-xl-6 col-sm-12 mx-auto">
+
+                      </div>
+                    </div>
+
+                </div>
+                <div class="about_us col-xl-6 col-sm-12">
+                  <div class="about_us_wrap" style="margin-top:-30px;">
+                    <h1 class="about_us_wrap_title">Corporate Secretary</h1>
+                    <div class="about_us_wrap_text">
+                        
+                        <p>Compliance with corporate regulations is crucial for the smooth functioning of your business. At OAD, our corporate secretary services ensure adherence to statutory requirements.</p>
+
+                        <!-- <h3>Subheader 1</h3> -->
+
+                        <p>1. Incorporation</p>
+                       
+                        <p>2. Corporate Compliance</p>
+
+                        <p>3. Business Expansion</p>
+
+                        <p>4. Shareholders Support</p>
+
+                        <p>5. Issuing Shares Certificates</p>
+                       
+                        <p>6. Activation of Custom Accounts</p>
+
+                        <p>7. Application of AIS</p>
+
+                        <p>8. Certificate of Residence</p>
+
+                        <p>9. Virtual Office Services</p>
+                       
+                        <p>10. Filing Annual Return</p>
+
+                        <p>11. Corporate Bank Account Opening</p>
+
+                        <p>12. Nominee Director</p>
+
+                        <p>13. Lodgement pf RORC Information</p>
+                       
+                        <p>14. CorpPass Registration</p>
+
+                        <p>15. Representative Office Application & Extension</p>
+                        
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>  
+        </div>
+      </div>
+    </section>
+  	<!-- 1: Vision -->
+    <section id="vision">
+      <div class="inner">
+        <div class="vision_page card card-oad card-green">
+          <a href="#contact" class="contact-circle"></a>
+          <div id="vision-top-text">
+          </div>
+          <div id="vision-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="vision_left col-xl-6 col-sm-12">
+                <br><br>
+                <h1>VISION & MISSION</h1>
+              </div>
+              <div class="col-xl-6 col-sm-12">
+                <div class="card-small">
+                  <div class="card-body">
+                      <p style="color:teal; text-transform: uppercase; font-weight: 900; font-size: 32px; text-align: left; line-height: 32px; margin-top: -20px;">Vision</p>
+                      <p class="pinfo">OAD aims to develop sustainable and decentralised Corporate services, minimising the expendable steps while maximising efficiency through digitalization. We strive to guide your business to generate profit and to create a new revenue stream by joining the upcoming digital world.</p>
+                      <p style="color:teal; text-transform: uppercase; font-weight: 900; font-size: 32px; text-align: left; line-height: 32px;">Mission</p>
+                      <p class="pinfo">OAD Aims to nurture your business with Corporate services and Corporate Secretarial services. We are keen to incorporate and Develop technology and sustainability into our Distinctive services and with our team of professionals Always ready and constantly On the lookout for business opportunities. You can to develop and grow your business to higher grounds with OAD.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  	<!-- 2: Mission -->
+    <section id="mission">
+      <div class="inner">
+        <div class="vision_page card card-oad card-green">
+          <a href="#contact" class="contact-circle"></a>
+          <div id="vision-top-text">
+          </div>
+          <div id="vision-bottom-text">
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="mission_left col-xl-6 col-sm-12">
+                <br><br>
+                <h1>MISSION</h1>
+              </div>
+              <div class="col-xl-6 col-sm-12">
+                <div class="card-small" style="height:72vh;">
+                  <div class="card-body">
+                    <div class="card-body">
+                      <p style="color:teal; font-weight: 900; font-size: 18px; text-align: left; line-height: 22px; margin-top: -20px;">Delivering Exceptional Corporate Services</p>
+                      <p class="pinfo">Our mission is to deliver exceptional corporate services, leveraging our expertise, innovation, and personalized approach to help businesses meet their regulatory and compliance obligations effectively.</p>
+                      <p style="color:teal; font-weight: 900; font-size: 18px; text-align: left; line-height: 22px; margin-top:10px;">Partnering for Long-Term Success</p>
+                      <p class="pinfo">We strive to build long-term partnerships with our clients, working closely with them as trusted advisors, understanding their unique needs, and offering proactive support to help them achieve their business goals.</p>
+                      <p style="color:teal; font-weight: 900; font-size: 18px; text-align: left; line-height: 22px; margin-top:10px;">Simplifying Complexity through Tailored Solutions</p>
+                      <p class="pinfo">Our mission is to simplify the complex landscape of corporate governance and compliance for businesses. We provide tailored solutions that streamline processes, reduce administrative burdens, and optimize efficiency.</p>
+                      <p style="color:teal; font-weight: 900; font-size: 18px; text-align: left; line-height: 22px; margin-top:10px;">Enabling Growth with Strategic Guidance</p>
+                      <p class="pinfo">We aim to enable growth by offering strategic guidance to our clients. Through our industry insights, experience, and forward-thinking approach, we help businesses seize opportunities, overcome challenges, and maximize their potential.</p>
+                      <p style="color:teal; font-weight: 900; font-size: 18px; text-align: left; line-height: 22px; margin-top:10px;">Driving Ethical Business Practices</p>
+                      <p class="pinfo">We are committed to driving ethical business practices and fostering a culture of integrity. Our mission is to assist businesses in embracing transparency, accountability, and sustainability, aligning them with global standards.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  	<!-- 3: Team -->
+    <section id="team">
+      <div class="inner">
+        <div class="team-placeholder">
+          <div class="container-fluid">
+            <div class="vision_page row">
+              <div class="col-md-12 col-sm-12">
+                <center><h1 style="font-size:60px;">OUR TEAM</h1></center>
+              </div>
+            </div>
+            <div class="row">
+
+            </div>
+          </div>
+        </div>
+       </div>
+    </section>
+
+    <!-- 11: Contact -->
+    <section id="contact">
+      <div class="inner">
+        <div class="contact_page card card-oad card-green">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 px-5">
+                <h1>CONTACT US</h1>
+                <form id="contact-form" action="contact-form-handler.php" method="post">
+                  <div class="form-elements-container">
+                    <div id="form-response"></div>
+                    <div class="mb-3">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" class="form-control custom-input" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email address</label>
+                      <input type="email" class="form-control custom-input" id="email" name="email" required>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="contact-number" class="form-label">Contact number</label>
+                      <input type="tel" class="form-control custom-input" id="contact-number" name="contact_number">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="request-category" class="form-label">Request category</label>
+                      <select class="form-select custom-input custom-select" id="request-category" name="request_category" required>
+                        <option value="" class="disabled-option" disabled selected>Please choose a category</option>
+                        <option value="category1">Accounting Services</option>
+                        <option value="category2">Tax Services</option>
+                        <option value="category3">Corporate Services</option>
+                        <option value="category3">Corporate Secretary</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="query" class="form-label">Your query</label>
+                      <textarea class="form-control custom-input custom-textarea" id="query" name="query" rows="3"></textarea>
+                    </div>
+                    <div style="display:none;">
+                      <label for="website">Website</label>
+                      <input type="text" id="website" name="website">
+                    </div>
+                  </div>
+                  <center>
+                    <button type="submit" class="btn btn-primary custom-submit">Submit</button>
+                  </center>
+                </form>
+              </div> 
+              <div class="col-md-6 col-sm-12">
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+</div>
+<div class="modal fade" id="teamMember1-modal" tabindex="-1" aria-labelledby="teamMember1-modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content px-3 py-1">
+      <div class="modal-header team-modal">
+        <h5 class="modal-title team-title" id="teamMember1-modalLabel">Calesta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add the team member's profile content here -->
+        <p>Calesta is a seasoned relationship manager with 3 years of experience in corporate secretary services. With an impressive portfolio of over 100 clients, she has a proven track record of building strong relationships and delivering exceptional support. Hailing from Indonesia, Calesta is fluent in Indonesian, Chinese, and English, enabling her to effectively communicate and cater to diverse clientele. With her exceptional readiness and determination, Priscella is set to excel in the challenging realm of corporate secretary.</p>
+      </div>
+      <div class="modal-footer team-modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="teamMember2-modal" tabindex="-1" aria-labelledby="teamMember2-modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content px-3 py-1">
+      <div class="modal-header team-modal">
+        <h5 class="modal-title team-title" id="teamMember2-modalLabel">Kelly</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add the team member's profile content here -->
+        <p>Kelly is a dedicated relationship manager with 5 years of experience in corporate secretary services. As a mother of 2, she possesses exceptional multitasking and organizational skills. With an extensive client base of over 200, Kelly excels at building and maintaining strong relationships. Hailing from Malaysia, she is a polyglot, fluent in English, Mandarin and Malay, which allows her to effectively communicate with diverse clients and navigate international business environments. Her extensive experience and linguistic abilities make her a valuable asset in the field.</p>
+      </div>
+      <div class="modal-footer team-modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="teamMember3-modal" tabindex="-1" aria-labelledby="teamMember3-modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content px-3 py-1">
+      <div class="modal-header team-modal">
+        <h5 class="modal-title team-title" id="teamMember3-modalLabel">Max</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add the team member's profile content here -->
+        <p>Max is an accomplished relationship manager who successfully transitioned from a banking career to corporate secretary services. With 4 years of industry experience, he has garnered a loyal client base of 100 satisfied individuals. Max's multilingual abilities in Chinese, Bahasa, French, and English equip him to effectively communicate with diverse clientele. His background in banking brings a deep understanding of financial intricacies, enabling him to provide comprehensive support to his clients. Max stands out as a highly valuable professional in the field of corporate secretary services.</p>
+      </div>
+      <div class="modal-footer team-modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="teamMember4-modal" tabindex="-1" aria-labelledby="teamMember4-modalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content px-3 py-1">
+      <div class="modal-header team-modal">
+        <h5 class="modal-title team-title" id="teamMember4-modalLabel">Priscella</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Add the team member's profile content here -->
+        <p>Priscella is an ambitious relationship manager who recently graduated from Nanyang Technological University. Despite being a fresh graduate, she brings a wealth of practical experience in the field of corporate secretary, with over 5 internships dedicated to honing her skills. Armed with a solid educational foundation and extensive hands-on training, Priscella is poised to make her mark in the world of corporate secretary. Her enthusiasm, determination, and readiness to take on challenges set her apart as a promising professional in the industry.</p>
+      </div>
+      <div class="modal-footer team-modal">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  
+  <script src="docSlider.js"></script>
+  <script>docSlider.init();</script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <script>
+    function openModal(event, modalId) {
+      const teamInfoClass = 'team-info';
+      if (!event.target.closest('.' + teamInfoClass)) {
+        const modal = new bootstrap.Modal(document.getElementById(modalId));
+        modal.show();
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+      $("#contact-form").on("submit", function(event) {
+        event.preventDefault();
+
+        $.ajax({
+          type: "POST",
+          url: "contact-form-handler.php",
+          data: $(this).serialize(),
+          success: function(response) {
+            $("#form-response").html(response);
+          },
+          error: function(jqXHR, textStatus, errorThrown) {
+            $("#form-response").html("An error occurred. Please try again.");
+          }
+        });
+      });
+    });
+    </script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0-alpha1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+Knujsl5/1z7v8/rD5xFB8AI089EJCD7V5iD5/5snV8XEn2m" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0-alpha1/js/bootstrap.bundle.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Our Team Section -->
+  <section id="our-team">
+    <div class="container">
+      <h2 class="text-center">Our Team</h2>
+
+      <!-- Carousel -->
+      <div id="team-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+        <div class="carousel-inner">
+          <!-- Add a 'carousel-item' div for each group of 4 team members -->
+          <div class="carousel-item active">
+            <div class="row">
+              <!-- Replace 'teamMember1', 'teamMember2', etc. with appropriate data for each team member -->
+              <!-- Card 1 -->
+              <div class="col-md-3">
+                <div class="card team-card" data-bs-toggle="modal" data-bs-target="#teamMember1-modal">
+                  <img src="img/team-1.jpg" class="card-img-top team-img" alt="Team Member 1">
+                  <div class="card-img-overlay team-info">
+                    <h5 class="card-title">Team Member 1</h5>
+                    <p class="card-text">Role</p>
+                    <div class="team-socials">
+                      <a href="#" class="btn btn-sm btn-primary">LinkedIn</a>
+                      <a href="#" class="btn btn-sm btn-primary">Twitter</a>
+                      <a href="#" class="btn btn-sm btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card team-card" data-bs-toggle="modal" data-bs-target="#teamMember1-modal">
+                  <img src="img/team-2.jpg" class="card-img-top team-img" alt="Team Member 1">
+                  <div class="card-img-overlay team-info">
+                    <h5 class="card-title">Team Member 1</h5>
+                    <p class="card-text">Role</p>
+                    <div class="team-socials">
+                      <a href="#" class="btn btn-sm btn-primary">LinkedIn</a>
+                      <a href="#" class="btn btn-sm btn-primary">Twitter</a>
+                      <a href="#" class="btn btn-sm btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card team-card" data-bs-toggle="modal" data-bs-target="#teamMember1-modal">
+                  <img src="img/team-3.jpg" class="card-img-top team-img" alt="Team Member 1">
+                  <div class="card-img-overlay team-info">
+                    <h5 class="card-title">Team Member 1</h5>
+                    <p class="card-text">Role</p>
+                    <div class="team-socials">
+                      <a href="#" class="btn btn-sm btn-primary">LinkedIn</a>
+                      <a href="#" class="btn btn-sm btn-primary">Twitter</a>
+                      <a href="#" class="btn btn-sm btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card team-card" data-bs-toggle="modal" data-bs-target="#teamMember1-modal">
+                  <img src="img/team-4.jpg" class="card-img-top team-img" alt="Team Member 1">
+                  <div class="card-img-overlay team-info">
+                    <h5 class="card-title">Team Member 1</h5>
+                    <p class="card-text">Role</p>
+                    <div class="team-socials">
+                      <a href="#" class="btn btn-sm btn-primary">LinkedIn</a>
+                      <a href="#" class="btn btn-sm btn-primary">Twitter</a>
+                      <a href="#" class="btn btn-sm btn-primary">GitHub</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add more 'carousel-item' divs for additional groups of 4 team members if needed -->
+        </div>
+                <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#team-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#team-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example Modal for Team Member 1 -->
+  <div class="modal fade" id="teamMember1-modal" tabindex="-1" aria-labelledby="teamMember1-modalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="teamMember1-modalLabel">Team Member 1</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- Add the team member's profile content here -->
+          <p>Team member's profile information...</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
